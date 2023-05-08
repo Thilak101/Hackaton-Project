@@ -72,37 +72,37 @@ function filterFun() {
 
 // selection functionality
 
-// const selectEle = document.getElementById("sE")
-// const optionEle = document.querySelectorAll("option")
+const selectEle = document.getElementById("sE")
+const optionEle = document.querySelectorAll("option")
 
-// document.getElementById("restart").addEventListener("click", () => {
-//   location.reload()
-// })
-
-
-// allEpisodes.forEach(episode => {
-//   const optionEle = document.createElement("option")
-//   optionEle.innerText = ("value", `S0${episode.season}E0${episode.number} - ${episode.name}`)
-//   optionEle.setAttribute("value", `${episode.id}`)
-//   selectEle.append(optionEle)
-
-// })
-
-// function selectEpisode(e) {
-
-//   for (let i = 0; i < cards.length; i++) {
-//     const dataId = cards[i].getAttribute("dataId")
-//     if (e.target.value === dataId) {
-//       cards[i].style.display = ""
-//     } else {
-//       cards[i].style.display = "none"
-//     }
-//   }
-// }
+document.getElementById("restart").addEventListener("click", () => {
+  location.reload()
+})
 
 
+allEpisodes.forEach(episode => {
+  const optionEle = document.createElement("option")
+  optionEle.innerText = ("value", `S0${episode.season}E0${episode.number} - ${episode.name}`)
+  optionEle.setAttribute("value", `${episode.id}`)
+  selectEle.append(optionEle)
 
-// selectEle.addEventListener("change", selectEpisode)
+})
+
+function selectEpisode(e) {
+
+  for (let i = 0; i < cards.length; i++) {
+    const dataId = cards[i].getAttribute("dataId")
+    if (e.target.value === dataId) {
+      cards[i].style.display = ""
+    } else {
+      cards[i].style.display = "none"
+    }
+  }
+}
+
+
+
+selectEle.addEventListener("change", selectEpisode)
 
 
 // data from api
