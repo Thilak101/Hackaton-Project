@@ -110,32 +110,32 @@ selectEle.addEventListener("change", selectEpisode)
 // const searchInpu = document.getElementById("search")
 // const cards = document.querySelectorAll(".card")
 // const resultEle = document.getElementById("result")
-// for (let i = 0; i < cards.length; i++) {
-//   cards[i].setAttribute("count", i)
-// }
+for (let i = 0; i < cards.length; i++) {
+  cards[i].setAttribute("count", i)
+}
 
-// async function fetchApi() {
-//   try {
-//     const response = await fetch('https://api.tvmaze.com/shows/82/episodes')
-//     const data = await response.json()
+async function fetchApi() {
+  try {
+    const response = await fetch('https://api.tvmaze.com/shows/82/episodes')
+    const data = await response.json()
 
-// cards.forEach(card => {
-// card.addEventListener("click", () => {
-// window.open(`https://www.tvmaze.com/episodes/${card.getAttribute("dataId")}`)
-// window.open(data[card.getAttribute("count")].url)
+cards.forEach(card => {
+card.addEventListener("click", () => {
+window.open(`https://www.tvmaze.com/episodes/${card.getAttribute("dataId")}`)
+window.open(data[card.getAttribute("count")].url)
 
-//       })
-//     })
+      })
+    })
 
-//   }
-//   catch (err) {
-//     console.log(err)
-//   }
+  }
+  catch (err) {
+    console.log(err)
+  }
 
 
-// }
+}
 
-// fetchApi()
+fetchApi()
 
 
 
