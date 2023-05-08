@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rasa&family=Roboto:wght@300;400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+
+}
+
+.card {
+    text-align: center;
+    width: 400px;
+    padding-bottom: 100px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-heading {
+    border: 2px solid #454545;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.discription {
+    color: gray;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.img {
+    margin: 20px 0;
+}
+
+.sE {
+    font-family: 'Rasa', serif;
+}
+
+select {
+    padding: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+select:hover {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+}
+
+.search {
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#result {
+    color: #454545;
+}
