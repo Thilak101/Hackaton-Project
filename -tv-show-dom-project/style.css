@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rasa&family=Roboto:wght@300;400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+
+}
+
+.card {
+    text-align: center;
+    width: 400px;
+    padding-bottom: 100px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-heading {
+    border: 2px solid #454545;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.discription {
+    color: gray;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.img {
+    margin: 20px 0;
+}
+i:hover{
+    scale: 1.5;
+}
+
+.left {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: #dedede 2px solid;
+    box-shadow: 2px 2px 5px #454545;
+}
+
+.left span {
+    font-weight: lighter;
+}
+
+.left h4 {
+    margin: 10px 0;
+}
+
+.menuHeading:hover {
+    color: #454545;
+}
+
+.sE {
+    font-family: 'Rasa', serif;
+}
+
+select {
+    padding: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+select:hover,
+input:hover {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+}
+
+.search, .frontsearch {
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.show_card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    padding: 20px;
+    border: 2px solid #dedede;
+    box-shadow: 3px 2px 7px #454545;
+    margin: 5px;
+
+}
+
+.show_card h1 {
+    margin-bottom: 30px;
+}
+
+.show_card img {
+    width: 100px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.right {
+    margin-right: 10px;
+}
+
+
+
+#result {
+    color: #454545;
+}
